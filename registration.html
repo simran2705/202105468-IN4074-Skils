@@ -1,0 +1,55 @@
+<!--Simranjeet Singh 202105468 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href=".css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <ol>
+        <li> <a href="index.php">Home</a> </li>
+        <li> <a href="concert.html">Concerts</a> </li>
+        <li> <a href="registration.html">Registration</a> </li>
+        <li> <a href="about.html">about</a> </li>
+
+
+        </ol>
+            </header>
+    <main>
+    <h1> Our Registration form</h1>
+    <p> Welcome to the registration for our music class! To participate in our musical journey, 
+        please provide your information below. Discover the delight of studying and composing music
+         with our enthusiastic teachers. Don't pass up this chance to develop your musical skills and
+          make connections with other music lovers. Register right away to start hearing the tunes!</p>
+        
+    <h3>Registration Form</h3>
+    <form action="submit.php" method="post">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <input type="submit" value="Register">
+    </form>
+    </main>
+</body>
+</html>
